@@ -41,7 +41,7 @@ export class Person{
         }
         console.log(isIn);
     }
-    public print(){
+    public printPerson(){
         console.log(`
         Name: ${this.name}
         Nationality: ${this.nationality}
@@ -49,7 +49,7 @@ export class Person{
         Experience Years: ${this.expYears}
         `);
     }
-    public toString(){
+    public toStringPerson(){
         console.log('' + this.name + '\n' + this.nationality + '\n' + this.profession + '\n' + this.expYears);
     }
 

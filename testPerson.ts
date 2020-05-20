@@ -10,5 +10,5 @@ console.log('----');
 raquel.inDataBase(prueba);
 raquel.inDataBase(prueba2);
 console.log('----');
-alex.print();
+alex.printPerson();
 
