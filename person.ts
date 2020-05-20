@@ -9,7 +9,7 @@ export class Person{
         this.profession = profession;
         this.expYears = expYears;
     }
-    public getName(){
+    public getPName(){
         return this.name
     }
     public getNation(){
@@ -41,17 +41,20 @@ export class Person{
         }
         console.log(isIn);
     }
-    public printPerson(){
-        console.log(`
+    public printPerson(): string{
+        return(`
         Name: ${this.name}
         Nationality: ${this.nationality}
         Profession: ${this.profession}
         Experience Years: ${this.expYears}
         `);
     }
-    public toStringPerson(){
-        console.log('' + this.name + '\n' + this.nationality + '\n' + this.profession + '\n' + this.expYears);
+    public toStringPerson(): string{
+        return ('' + this.name + '\n' + this.nationality + '\n' + this.profession + '\n' + this.expYears);
     }
-
+    public nameToString(): string{
+        let text: string = `${this.name}`
+        return text;
+    }
     
 }

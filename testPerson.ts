@@ -10,5 +10,7 @@ console.log('----');
 raquel.inDataBase(prueba);
 raquel.inDataBase(prueba2);
 console.log('----');
-alex.printPerson();
+
+console.log(alex.nameToString());
+
 
