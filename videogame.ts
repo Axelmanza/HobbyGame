@@ -49,7 +49,7 @@ export class Videogame{
     public isInPlatform(platform: string):boolean{
         // let isIN: boolean = false;
         // let i:number = 0;
-        // while(!isIN){
+        // while(!isIN && i < (this.platforms.length-1)){
         //     if (this.platforms[i].getName() === platform){
         //         isIN = true;
         //     }
