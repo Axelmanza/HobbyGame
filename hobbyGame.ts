@@ -71,4 +71,7 @@ export class HobbyGame{
     public escribirEnFicheroJson(nombre:string){
         fs.writeJsonSync("./" + nombre + ".json", this.toJSON())
     }
+    public static obtenerInstancia(nombreFichero: string):HobbyGame{
+        return new HobbyGame( fs.readJsonSync("./" + nombreFichero + ".json") )
+    }
 }

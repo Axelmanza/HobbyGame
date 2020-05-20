@@ -1,3 +1,4 @@
+import {storageDevice} from "./storageDevice";
 export class Platform{
     private name: string
     private releaseYear: number
@@ -7,11 +8,11 @@ export class Platform{
     private hasHD: boolean
     private hdSize: number
     private hasInternetConex: boolean
-    private storageDevice: string
+    private storageDevice: storageDevice
     private color: string
     constructor(name: string, releaseYear: number, company: string, 
         nBits: number, generation: number, hasHD: boolean, hdSize: number,
-        hasInternetConex: boolean, storageDevice: string, color: string){
+        hasInternetConex: boolean, storageDevice: storageDevice, color: string){
             this.name = name
             this.releaseYear = releaseYear
             this.company = company
@@ -43,7 +44,7 @@ export class Platform{
     public setHD(hasHD: boolean){this.hasHD = hasHD}
     public setHdSize(hdSize: number){this.hdSize = hdSize}
     public setConex(hasInternetConex: boolean){this.hasInternetConex = hasInternetConex}
-    public setStoage(storageDevice: string){this.storageDevice = storageDevice}
+    public setStoage(storageDevice: storageDevice){this.storageDevice = storageDevice}
     public setColor(color: string){this.color = color}
     //Metodos
     public alreadyIN(consola: Platform):boolean{

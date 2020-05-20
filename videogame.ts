@@ -21,9 +21,16 @@ export class Videogame{
             this.languages = languages
             this.platforms = platforms
             this.price = price
-            this.score = score
+            this.score = this.mmscore(score)
     }
-
+    public mmscore(score: number):number{
+        console.log(score >= 0 && score <= 10)
+        if (score >= 0 && score <= 10){
+            return score;
+        }else{
+            throw new Error('Score is 0-10')
+        }
+    }
     //getters
     getTitle(){return this.title}
     getYear(){return this.year}
