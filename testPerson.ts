@@ -1,9 +1,10 @@
  import {Person} from "./person";
+ import {Profession} from "./profession";
 
-let raquel = new Person('Raquel', 'Spanish', 'Tester', 3);
-let prueba = new Person('Raquel', 'Spanish', 'Tester', 3);
-let prueba2 = new Person('Raquel', 'Spanish', 'Tester', 6);
-let alex = new Person('Alex', 'Spanish', 'Developer', 5);
+let raquel = new Person('Raquel', 'Spanish', Profession.TESTER, 3);
+let prueba = new Person('Raquel', 'Spanish', Profession.TESTER, 3);
+let prueba2 = new Person('Raquel', 'Spanish', Profession.DEVELOPER, 6);
+let alex = new Person('Alex', 'Spanish', Profession.DEVELOPER, 5);
 
 raquel.toString();
 console.log('----');

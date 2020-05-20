@@ -1,8 +1,9 @@
 import {Platform} from "./platform";
+import {storageDevice} from "./storageDevice";
 
-let plat1 = new Platform('playStation4', 2015, 'Sony', 64, 4, true, 268, true, 'CD', 'black');
-let plat2 = new Platform('playStation4', 2015, 'Sony', 64, 4, true, 268, true, 'CD', 'black');
-let plat3 = new Platform('playStation4', 2015, 'Sony', 64, 4, true, 268, true, 'CD', 'whithe');
+let plat1 = new Platform('playStation4', 2015, 'Sony', 64, 4, true, 268, true, storageDevice.CD, 'black');
+let plat2 = new Platform('playStation4', 2015, 'Sony', 64, 4, true, 268, true, storageDevice.CD, 'black');
+let plat3 = new Platform('playStation4', 2015, 'Sony', 64, 4, true, 268, true, storageDevice.CD, 'whithe');
 
 plat1.printPlatform();
 console.log('----');

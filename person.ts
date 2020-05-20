@@ -1,9 +1,10 @@
+import { Profession } from "./profession";
 export class Person{
     private name: string
     private nationality: string
-    private profession: string
+    private profession: Profession
     private expYears: number
-    constructor(name: string, nationality: string, profession: string, expYears: number){
+    constructor(name: string, nationality: string, profession: Profession, expYears: number){
         this.name = name;
         this.nationality = nationality;
         this.profession = profession;
@@ -27,7 +28,7 @@ export class Person{
     public setNation(nation: string){
         this.nationality = nation
     }
-    public setProf(prof:string){
+    public setProf(prof:Profession){
         this.profession = prof
     }
     public setExp(exp: number){
