@@ -1,6 +1,6 @@
 import {Videogame} from "./videogame";
 import {Person} from "./person";
-
+import * as fs from "fs-extra";
 export class HobbyGame{
     private games: Videogame[]
     constructor(games: Videogame[]){
@@ -64,5 +64,11 @@ export class HobbyGame{
         }
         return games
     }
-    
+    public toJSON(){
+        let json = {'juegos': this.games}
+        return json;
+    }
+    public escribirEnFicheroJson(nombre:string){
+        fs.writeJsonSync("./" + nombre + ".json", this.toJSON())
+    }
 }

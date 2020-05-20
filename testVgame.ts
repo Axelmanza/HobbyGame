@@ -2,6 +2,7 @@ import {Videogame} from "./videogame";
 import {Platform} from "./platform";
 import {Person} from "./person";
 import {HobbyGame} from "./hobbyGame";
+import * as fs from "fs-extra";
 
 //Persons
 let raquel = new Person('Raquel', 'Spanish', 'Tester', 3);
@@ -43,3 +44,6 @@ console.log('----');
 console.log(hooby1.inPlatAndLang('Xbox', 'Japanese'));
 console.log('----');
 console.log(hooby1.byScore());
+console.log('------');
+hooby1.toJSON();
+hooby1.escribirEnFicheroJson('juegos');
