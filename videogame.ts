@@ -97,5 +97,4 @@ export class Videogame{
         this.platforms.forEach(plat => text += plat.getName() + ' ');
         return text;
     }
-
 }
