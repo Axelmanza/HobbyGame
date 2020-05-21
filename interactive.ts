@@ -3,7 +3,7 @@ import {Platform} from "./platform";
 import {Person} from "./person";
 import {HobbyGame} from "./hobbyGame";
 import * as readline from 'readline-sync'
-import { read } from "fs-extra";
+
 //desarrolladores
 let masDesarrolladores = false;
 let desarrolladores: Person[] = [];
