@@ -1,17 +1,23 @@
 import {Videogame} from "./videogame";
 import {Person} from "./person";
 import * as fs from "fs-extra";
+
+
 export class HobbyGame{
     private games: Videogame[]
     constructor(games: Videogame[]){
         this.games = games
     }
+    //Getter
     public getGames(){
         return this.games
     }
+    //Setter
     public setGames(games: Videogame[]){
         this.games = games
     }
+
+    //Metodos publicos
     public totalPrice(): number{
         let total: number = 0;
         for (let i = 0; i < this.games.length; i++){

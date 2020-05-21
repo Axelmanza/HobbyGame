@@ -21,9 +21,10 @@ export class Videogame{
             this.languages = languages
             this.platforms = platforms
             this.price = price
-            this.score = this.mmscore(score)
+            this.score = this.Sscore(score)
     }
-    public mmscore(score: number):number{
+    private
+     Sscore(score: number):number{
         console.log(score >= 0 && score <= 10)
         if (score >= 0 && score <= 10){
             return score;
@@ -32,26 +33,63 @@ export class Videogame{
         }
     }
     //getters
-    getTitle(){return this.title}
-    getYear(){return this.year}
-    getDevelopers(){return this.developers}
-    getNationality(){return this.nationality}
-    getDirector(){return this.director}
-    getLanguages(){return this.languages}
-    getPlatforms(){return this.platforms}
-    getPrice(){return this.price}
-    getScore(){return this.score}
+    getTitle(){
+        return this.title
+    }
+    getYear(){
+        return this.year
+    }
+    getDevelopers(){
+        return this.developers
+    }
+    getNationality(){
+        return this.nationality
+    }
+    getDirector(){
+        return this.director
+    }
+    getLanguages(){
+        return this.languages
+    }
+    getPlatforms(){
+        return this.platforms
+    }
+    getPrice(){
+        return this.price
+    }
+    getScore(){
+        return this.score
+    }
 
     //setters
-    setTitle(title: string){this.title = title}
-    setYear(year: number){this.year = year}
-    setDevelopers(developers: Person[]){this.developers = developers}
-    setNationality(nationality: string){this.nationality = nationality}
-    setDirector(director: Person){this.director = director}
-    setLanguages(languages: string[]){this.languages = languages}
-    setPlatforms(platforms: Platform[]){this.platforms = platforms}
-    setPrice(price: number){this.price = price}
-    setScore(score: number){this.score = score}
+    setTitle(title: string){
+        this.title = title
+    }
+    setYear(year: number){
+        this.year = year
+    }
+    setDevelopers(developers: Person[]){
+        this.developers = developers
+    }
+    setNationality(nationality: string){
+        this.nationality = nationality
+    }
+    setDirector(director: Person){
+        this.director = director
+    }
+    setLanguages(languages: string[]){
+        this.languages = languages
+    }
+    setPlatforms(platforms: Platform[]){
+        this.platforms = platforms
+    }
+    setPrice(price: number){
+        this.price = price
+    }
+    setScore(score: number){
+        this.score = score
+    }
+    
     //Metodos
     public isInPlatform(platform: string):boolean{
         // let isIN: boolean = false;
