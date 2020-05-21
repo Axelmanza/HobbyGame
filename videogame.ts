@@ -23,8 +23,7 @@ export class Videogame{
             this.price = price
             this.score = this.Sscore(score)
     }
-    private
-     Sscore(score: number):number{
+    private Sscore(score: number):number{
         console.log(score >= 0 && score <= 10)
         if (score >= 0 && score <= 10){
             return score;

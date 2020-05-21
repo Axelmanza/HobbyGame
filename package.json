@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Axelmanza/HobbyGame#readme",
   "dependencies": {
-    "fs-extra": "latest"
+    "fs-extra": "latest",
+    "readline-sync": "latest"
   }
 }

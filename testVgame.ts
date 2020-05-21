@@ -47,5 +47,7 @@ console.log('----');
 console.log(hooby1.byScore());
 console.log('------');
 hooby1.toJSON();
-hooby1.escribirEnFicheroJson('hobbyGameBBDD');
-let hooby2 = HobbyGame.obtenerInstancia('hobbyGameBBDD');
+hooby1.escribirEnFicheroJson('hobbygameBBDD');
+let hooby2 = HobbyGame.obtenerInstancia('hobbygameBBDD');
+
+console.log(hooby2.getGames());
